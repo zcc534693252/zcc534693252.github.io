@@ -4,6 +4,35 @@
 	<title>页面1</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="nav.css">
+	<style type="text/css">
+		div#background_video {
+			width: 500px;
+			margin: auto;
+		} 
+		video {
+			width: 400px;
+			padding: 25px;
+			border: 2px;
+			border-style:dotted;
+			margin: 23px;
+		}
+
+		div#audio {
+			width: 300px; height: 200px;
+			position: absolute; 
+			left: 50%; 
+			top: 150px;
+			/*margin-top: -100px;*/    /* 高度的一半 */
+			margin-left: -150px;    /* 宽度的一半 */
+		}
+		audio {
+			width: 300px;
+			padding: 3px;
+			border: 2px;
+			border-style:dotted;
+			border-color: #FFFF00;
+		}
+	</style>
 </head>
 <body>
 	<div>
@@ -14,6 +43,12 @@
 				<li><a href="two.html">页面2. 视频播放器</a></li>
 			</ul>			
 		</nav>
+	</div>
+	<div id="background_video">
+		<video controls src="两只老虎.mp4"></video>
+	</div>
+	<div id="audio">
+		<audio controls src="两只老虎.mp3"></audio>
 	</div>
 </body>
 </html>
